@@ -6,6 +6,8 @@ function increment() {
 }
 
 function decrement() {
-    count--;
-    document.getElementById('count').innerText = count;
+    if (confirm("Tem certeza de que deseja diminuir o número?")) {
+        count--;
+        document.getElementById('count').innerText = count;
+    }
 }
